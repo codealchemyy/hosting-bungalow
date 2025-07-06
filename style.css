@@ -132,6 +132,42 @@ header nav ul {
   width: 10rem;
 }
 
+features/user-reviews
+
+#user-reviews {
+  text-align: center;
+  padding: 60px 20px;
+  background-color:  #3c3f40;
+}
+
+#user-reviews h2 {
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+  color: beige;
+}
+
+.companies-reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.companies-reviews img {
+  max-width: 100px;
+  height: auto;
+  opacity: 0.8;
+  transition: opacity 0.3s ease; /* makes it smooth */
+  cursor: pointer; /* shows the user that it is interactive */
+}
+
+.companies-reviews img:hover {
+  opacity: 1;
+  transform: scale(2); /* increases size */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
 features/check-out-video
 
 #bungalow-video {

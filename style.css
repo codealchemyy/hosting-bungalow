@@ -132,6 +132,39 @@ header nav ul {
   width: 10rem;
 }
 
+features/check-out-video
+
+#bungalow-video {
+  padding: 60px 20px;
+  background-color: #3c3f40;
+  text-align: center;
+}
+
+#bungalow-video h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #F5F5DC;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video iframe {
+  width: 90%;
+  max-width: 900px;
+  height: 450px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.video iframe:hover {
+  transform: scale(1.02);
+}
+
 #features {
   padding: 40px 20px;
   background-color: #3c3f40;

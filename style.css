@@ -665,3 +665,101 @@ header {
     0 0 40px 10px rgba(212, 175, 55, 0.5);
   transform: scale(1.08);
 }
+
+#gallery-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 60px 20px;
+  background-color: #505253;
+  text-align: center;
+}
+
+#gallery-page h1 {
+  font-size: 2rem;
+  color: beige;
+}
+
+.bungalow-galleries{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  font-size: 1.1rem;
+  color: beige;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bungalow-gallery {
+  background-color: #3c3f40;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.bungalow-gallery:hover {
+  transform: translateY(-10px);
+}
+
+.bungalow-gallery img {
+  width: 100%;
+  border-radius: 8px;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.bungalow-gallery h2 {
+  font-size: 1.4rem;
+  color: beige;
+  margin-bottom: 10px;
+}
+
+.bungalow-gallery p {
+  font-size: 0.95rem;
+  color: #F5F5DC;
+  margin-bottom: 10px;
+}
+
+.location {
+  display: inline-block;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: default;
+}
+
+.button {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.button a {
+  color: aquamarine;
+  text-decoration: none;
+}
+
+.button a:hover {
+  opacity: 1;
+  transform: scale(5); /* increases size */
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+

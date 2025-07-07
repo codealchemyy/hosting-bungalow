@@ -89,7 +89,7 @@ html {
 body {
   background-color: var(--bg-dark);
   color: var(--text-light);
-  font-family: sans-serif;
+  font-family: "Playfair Display" 
 }
 
 header {
@@ -670,15 +670,16 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
   padding: 60px 20px;
-  background-color: #505253;
+  background-color: var(--bg-dark);
   text-align: center;
+  border-bottom: solid var(--gold);
 }
 
 #gallery-page h1 {
   font-size: 2rem;
-  color: beige;
+  color: var(--text-light);
 }
 
 .bungalow-galleries{
@@ -687,26 +688,37 @@ header {
   align-items: center;
   padding: 30px 0;
   font-size: 1.1rem;
-  color: beige;
+  color: var(--text-muted);
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .bungalow-gallery {
-  background-color: #3c3f40;
+  background-color: var(--bg-mid);
   border-radius: 10px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   width: 90%;
   max-width: 600px;
   padding: 20px;
   border-radius: 10px;
-  transition: transform 0.3s ease;
   text-align: center;
+  transition: var(--transition-default), box-shadow 0.3s ease;
 }
 
 .bungalow-gallery:hover {
-  transform: translateY(-10px);
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 6px 16px 0 rgba(212, 175, 55, 0.18),
+    0 2px 6px 0 rgba(0, 0, 0, 0.1);
+  border-color: var(--gold);
+  background: linear-gradient(
+    110deg,
+    rgba(212, 175, 55, 0.05) 0%,
+    rgba(255, 255, 255, 0.01) 100%
+  );
+  transition: box-shadow 0.22s cubic-bezier(0.4, 2, 0.6, 1),
+    background 0.22s cubic-bezier(0.4, 2, 0.6, 1),
+    transform 0.15s cubic-bezier(0.4, 2, 0.6, 1), border-color 0.15s;
 }
 
 .bungalow-gallery img {
@@ -719,25 +731,26 @@ header {
 
 .bungalow-gallery h2 {
   font-size: 1.4rem;
-  color: beige;
+  color: var(--text-light);
   margin-bottom: 10px;
 }
 
 .bungalow-gallery p {
   font-size: 0.95rem;
-  color: #F5F5DC;
+  color: var(--text-muted);
   margin-bottom: 10px;
 }
 
 .location {
   display: inline-block;
-  color: #ffffff;
-  border: 1px solid #ffffff;
-  background-color: transparent;
+  color: var(--gold);
+  border: solid var(--gold);
+  background-color: var(--bg-grey);
   padding: 8px 16px;
   font-size: 0.9rem;
   border-radius: 5px;
   cursor: default;
+  
 }
 
 .button {
@@ -746,18 +759,15 @@ header {
   justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
+
 }
 
 .button a {
-  color: aquamarine;
+  color: var(--gold);
   text-decoration: none;
 }
 
-.button a:hover {
-  opacity: 1;
-  transform: scale(5); /* increases size */
-  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
-}
+
 
 
 

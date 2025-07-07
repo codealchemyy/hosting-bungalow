@@ -4,40 +4,104 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Bungalow Hostin Gallery</title>
+    <title>Gallery - Northern Bungalows</title>
   </head>
   <body>
     <header>
-      <div id="logo">
-        <img src="images/Logo.png" alt="Bungalow RentingLogo" />
+      <div class="header-container">
+        <div id="logo">
+          <img src="images/Logo.png" alt="Bungalow Renting Logo" />
+        </div>
+        <nav id="nav" role="navigation" aria-label="Main navigation">
+          <ul>
+            <li class="nav-button"><a href="index.html">Home</a></li>
+            <li class="nav-button">
+              <a href="index.html#features">Features</a>
+            </li>
+            <li class="nav-button">
+              <a href="index.html#bungalow-info">Bungalow</a>
+            </li>
+            <li class="nav-button"><a href="index.html#pricing">Prices</a></li>
+            <li class="nav-button"><a href="gallery.html">Gallery</a></li>
+            <li class="nav-button">
+              <a href="index.html#pricing">Book now!</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav id="nav">
-        <ul>
-          <li class="nav-button"><a href="index.html">Home</a></li>
-          <li class="nav-button"><a href="index.html">Features</a></li>
-          <li class="nav-button">
-            <a href="#bungalow-info">Bungalow Information</a>
-          </li>
-          <li class="nav-button"><a href="gallery.html">Gallery</a></li>
-          <li class="nav-button"><a href="index.html">Prices</a></li>
-          <li class="nav-button"><a href="index.html">Location</a></li>
-        </ul>
-      </nav>
     </header>
     <main>
-      <div id="gallery">
-        <img src="images/Logo.png" alt="Placeholder" />
-        <img src="images/Logo.png" alt="Placeholder" />
-        <img src="images/Logo.png" alt="Placeholder" />
-      </div>
+      <section id="gallery-page">
+        <h1>Explore More Northern Bungalows</h1>
+        <p class="bungalow-galleries">
+          Looking for a cozy stay under the northern skies? Discover our
+          handpicked bungalows in Scandinavia's most famouse spots.
+        </p>
+
+        <div class="bungalow-gallery">
+          <img
+            src="https://images.pexels.com/photos/31126199/pexels-photo-31126199.jpeg"
+            alt="Northern Lights Cabin - Sweden"
+          />
+          <h2>Northern Lights Bungalow in Sweden</h2>
+          <p>
+            Hidden deep in the Swedish Lapland, this modern bungalow offers a
+            direc view of the dancing Northern lights.
+          </p>
+
+          <div class="button">
+            <button class="location">
+              <strong><a href="link">Sweden - Book Now</a></strong>
+            </button>
+          </div>
+        </div>
+
+        <div class="bungalow-gallery">
+          <img
+            src="https://images.pexels.com/photos/12166187/pexels-photo-12166187.jpeg"
+            alt="Arctic Retreat - Greenland"
+          />
+          <h2>Arctic Retreat</h2>
+          <p>
+            Stay in a cosy wooden house surrounded by icy beauty. Perfect for
+            explorers and peace-seekers.
+          </p>
+
+          <div class="button">
+            <button class="location">
+              <strong><a href="link">Greenland - Book Now</a></strong>
+            </button>
+          </div>
+        </div>
+
+        <div class="bungalow-gallery">
+          <img
+            src="https://images.pexels.com/photos/14800203/pexels-photo-14800203.jpeg"
+            alt="Fjord Whisper - Finland"
+          />
+          <h2>Fjord Whisper</h2>
+          <p>
+            A luxurious spot in the heart of Finland's untouched wilderness.
+            Wake up to frozen lakes, and pure serenity.
+          </p>
+
+          <div class="button">
+            <button class="location">
+              <strong><a href="link">Finland - Book Now</a></strong>
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
     <footer id="footer">
       <h3>Norway Bungalows</h3>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#prices">Prices</a></li>
-      </ul>
+      <div class="bottom-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#prices">Prices</a></li>
+        </ul>
+      </div>
       <div class="social-links">
         <a href="#" target="_blank">FB</a>
         <a href="#" target="_blank">IG</a>
